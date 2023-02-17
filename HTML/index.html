@@ -1,13 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geomentry Genius</title>
-    
+    <title>Geometry Genius</title>
+    <!-- tailwind Css and daisyUI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="/style/style.css">
+
 </head>
+
 <body>
-    
+    <!-- header -part -->
+    <header class="container">
+        <!-- navigation Bar -->
+        <nav class="navbar">
+            <div class="navbar bg-cyan-100">
+                <div class="flex-1">
+                    <h1>Interactive </h1><br>
+                    <h3>Geometry Genius</h3>
+                </div>
+                <div class="flex-none">
+                    <button class="btn btn-info">Blog</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main -part -->
+    <main>
+        <!-- Card-area -->
+        <div class="grid grid-cols-3">
+            <!-- triangle -->
+            <div class="card w-96 bg-fuchsia-300 shadow-xl">
+                <figure class="px-10 pt-10 mt-2.5">
+                    <img src="/images/triangle.png" alt="triangle" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title text-2xl">Triangle</h2>
+                    <p>Area (A) = 0.5<span class="close">x</span>b<span class="close">x</span>h</p>
+                    <div class="flex mt-5">
+                        <!-- <input type="number" placeholder="b"> -->
+                <input class=" w-24 h-8 px-3 max-w-xs rounded bg-slate-100 " type="text" placeholder="b"  />
+                <label class="text-xs mx-3 my-2" for="">cm</label>
+                
+                <input class=" w-24 h-8 px-3 max-w-xs rounded bg-slate-100" type="text" placeholder="h"  />
+                        <label class="text-xs mx-3 my-2" for="">cm</label>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-info  rounded-lg w-80 h-12 my-10">Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
