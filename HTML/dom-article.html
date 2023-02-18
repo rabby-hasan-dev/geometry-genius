@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Article</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container mx-auto">
+    <header>
+        <h1 class="text-center text-6xl text-cyan-400 p-4 mb-6 bg-slate-100 rounded-lg">Welcome to <span
+                class=" text-7xl text-red-500">DOM </span> World</h1>
+    </header>
+    <main>
+        <h2 class=" container text-center text-3xl bg-cyan-100 mx-auto p-4 mb-4 ">DOM Quesstion and Solutions</h2>
+        <article class="grid sm:grid-cols-1 md:grid-cols-2  gap-6">
+            <!--  Question NO-1 -->
+            <div class="bg-slate-100 p-4">
+                <h1 class="text-2xl mb-2">1. What is DOM and what is the purpose of DOM?</h1>
+                <p>“ DOM” means document object model. Dom is a programming interface for web documents. It represents
+                    the page so that programs can change the document structure, style, and content. The DOM represents
+                    the document as nodes and objects; that way, programming languages can interact with the page.</p>
+            </div>
+            <!--  Question NO-2 -->
+            <div class="bg-slate-100 p-4">
+                <h1 class="text-2xl mb-2">2. How will you select HTML elements using DOM? Name the DOM methods.</h1>
+                <p> To select an HTML DOM element using ID in javascript I need to use the
+                <ol>
+                    <li class="text-lg">1. QuerySelector Methods:</li>
+                    <li> a.The querySelector() Method</li>
+                    <li> b. The querySelectorAll() Method</li>
+                </ol>
+
+                <ol>
+                    <li  class="text-lg">2. GetElement Methods:</li>
+                    <li> a.The getElementById() Method</li>
+                    <li> b.The getElementsByTagName() Method</li>
+                    <li> c.The getElementsByClassName() Method</li>
+                </ol>
+                and this method will take the ID name, Class name, Tag name of my HTML DOM element as a string
+                without a hash
+                </p>
+            </div>
+            <!--  Question NO-3 -->
+            <div class="bg-slate-100 p-4">
+                <h1 class="text-2xl mb-2">3. What is event bubble?</h1>
+                <p>Event Bubble is a concept in the DOM (Document Object Model).
+                    It happens when an element receives an event,
+                    and that event bubbles up (or you can say is transmitted or propagated) to its parent and
+                    ancestor elements in the DOM tree until it gets to the root element.</p>
+            </div>
+            <!--  Question NO-4 -->
+            <div class="bg-slate-100 p-4">
+                <h1 class="text-2xl mb-2"> 4. What is a callback function and why will you use it?</h1>
+                <p>Callback function:
+                    A callback function is a function passed into another function as an argument, which is then invoked
+                    inside the outer function to complete some kind of routine or action. The a example is a synchronous
+                    callback, as it is executed immediately.
+                </p>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>
