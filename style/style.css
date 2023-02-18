@@ -1,12 +1,8 @@
-.navigation {
-    justify-content: space-between;
-    align-items: center;
-
-}
 
 
+/* ..................Card-section ...........................*/
 
-/* Card-section */
+/*........................ card-background................... */
 .card:hover {
     background-color: #fff;
     -webkit-animation: random 5s infinite;
