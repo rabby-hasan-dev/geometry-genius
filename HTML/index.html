@@ -18,7 +18,7 @@
     <!-- header -part -->
     <header>
         <!-- navigation Bar -->
-        <nav class="  lg:mx-10 my-6  mx-auto  justify-between items-center bg-cyan-100 flex rounded-lg">
+        <nav class=" lg:mx-10 my-6  mx-auto  justify-between items-center bg-cyan-100 flex rounded-lg">
             <div class="flex-none ml-10 py-3">
                 <h1 class="text-5xl mb-1">Interactive </h1>
                 <!-- <h3 class="text-3xl">Geometry Genius</h3> -->
@@ -41,18 +41,18 @@
                         <img src="/images/triangle.png" alt="triangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-2xl">Triangle</h2>
+                        <h2  id="triangle-title" class="card-title text-2xl">Triangle</h2>
                         <p>Area (A) = 0.5<span class="close">x</span>b<span class="close">x</span>h</p>
                         <div class="flex ">
-                            <input class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100 " type="text"
+                            <input id="ti-field-b" class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100 " type="text"
                                 placeholder="b" />
                             <label class="text-xs mx-3 my-2" for="">cm</label>
 
-                            <input class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100" type="text" placeholder="h" />
+                            <input id="ti-field-h" class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100" type="text" placeholder="h" />
                             <label class="text-xs mx-3 my-2" for="">cm</label>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-info  rounded-lg w-80 md:w-60 lg:w-60  my-10">Calculate</button>
+                            <button id="btn-triangle" class="btn btn-info  rounded-lg w-80 md:w-60 lg:w-60  my-10">Calculate</button>
                         </div>
                     </div>
 
@@ -64,19 +64,19 @@
                         <img src="/images/rectangle.png" alt="triangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-2xl">Rectangle</h2>
+                        <h2 id="rectangle-title" class="card-title text-2xl">Rectangle</h2>
                         <p>Area (A) = w<span class="close">x</span>l</p>
                         <div class="flex ">
 
-                            <input class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100 " type="text"
+                            <input id="rip-w" class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100 " type="text"
                                 placeholder="w" />
                             <label class="text-xs mx-3 my-2" for="">cm</label>
 
-                            <input class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100" type="text" placeholder="l" />
+                            <input id="rip-l" class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100" type="text" placeholder="l" />
                             <label class="text-xs mx-3 my-2" for="">cm</label>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-info  rounded-lg w-80 md:w-60 lg:w-60 h-12 my-10">Calculate</button>
+                            <button id="btn-rectangle" class="btn btn-info  rounded-lg w-80 md:w-60 lg:w-60 h-12 my-10">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -86,19 +86,19 @@
                         <img src="/images/parallelogram.png" alt="Parallelogram" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-2xl">Parallelogram</h2>
+                        <h2 id="parallelogram-title" class="card-title text-2xl">Parallelogram</h2>
                         <p>Area (A) = b<span class="close">x</span>h</p>
                         <div class="flex ">
 
-                            <input class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100 " type="text"
+                            <input id="pif-b" class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100 " type="text"
                                 placeholder="b" />
                             <label class="text-xs mx-3 my-2" for="">cm</label>
 
-                            <input class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100" type="text" placeholder="h" />
+                            <input id="pif-h" class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100" type="text" placeholder="h" />
                             <label class="text-xs mx-3 my-2" for="">cm</label>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-info  rounded-lg w-80 md:w-60 lg:w-60 h-12 my-10">Calculate</button>
+                            <button id="btn-parallelogram" class="btn btn-info  rounded-lg w-80 md:w-60 lg:w-60 h-12 my-10">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -108,21 +108,21 @@
                         <img src="/images/rhombus.png" alt="Rhombus" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-2xl">Rhombus</h2>
+                        <h2 id="rhombus-title" class="card-title text-2xl">Rhombus</h2>
                         <p>Area (A) = 0.5<span class="close">x</span>d<sub>1</sub><span
                                 class="close">x</span>d<sub>2</sub></p>
                         <div class="flex ">
 
-                            <input class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100 " type="text"
+                            <input id="rif-d1" class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100 " type="text"
                                 placeholder=" d1" />
                             <label class="text-xs mx-3 my-2" for="">cm</label>
 
-                            <input class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100" type="text"
+                            <input id="rif-d2" class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100" type="text"
                                 placeholder="d2" />
                             <label class="text-xs mx-3 my-2" for="">cm</label>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-info  rounded-lg w-80 md:w-60 lg:w-60 h-12 my-10">Calculate</button>
+                            <button id="btn-rhombus" class="btn btn-info  rounded-lg w-80 md:w-60 lg:w-60 h-12 my-10">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -132,19 +132,19 @@
                         <img src="/images/pentagon.png" alt="Pentagon" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-2xl">Pentagon</h2>
+                        <h2 id="pentagone-title" class="card-title text-2xl">Pentagon</h2>
                         <p>Area (A) = 0.5<span class="close">x</span>p<span class="close">x</span>b</p>
                         <div class="flex ">
 
-                            <input class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100 " type="text"
+                            <input id="peif-p" class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100 " type="text"
                                 placeholder="p" />
                             <label class="text-xs mx-3 my-2" for="">cm</label>
 
-                            <input class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100" type="text" placeholder="b" />
+                            <input id="peif-b" class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100" type="text" placeholder="b" />
                             <label class="text-xs mx-3 my-2" for="">cm</label>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-info  rounded-lg w-80 md:w-60 lg:w-60 h-12 my-10">Calculate</button>
+                            <button id="btn-pentagon" class="btn btn-info  rounded-lg w-80 md:w-60 lg:w-60 h-12 my-10">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -154,19 +154,19 @@
                         <img src="/images/ellipse.png" alt="Ellipse" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-2xl">Ellipse</h2>
+                        <h2 id="ellipse-title" class="card-title text-2xl">Ellipse</h2>
                         <p>Area (A) = <span class="close">π</span>ab</p>
                         <div class="flex ">
 
-                            <input class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100 " type="text"
+                            <input id="eif-a" class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100 " type="text"
                                 placeholder="a" />
                             <label class="text-xs mx-3 my-2" for="">cm</label>
 
-                            <input class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100" type="text" placeholder="b" />
+                            <input  id="eif-b" class=" w-full h-8 px-3 max-w-xs rounded bg-slate-100" type="text" placeholder="b" />
                             <label class="text-xs mx-3 my-2" for="">cm</label>
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-info  rounded-lg w-80 md:w-60 lg:w-60 h-12 my-10">Calculate</button>
+                            <button id="btn-ellipse" class="btn btn-info  rounded-lg w-80 md:w-60 lg:w-60 h-12 my-10">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -177,24 +177,20 @@
             <div class=" angle-calculation w-full md:w-[30%]  lg:w-[28%] mx-auto  ">
                 <h1 class="text-2xl underline mt-1 text-center">Area Calculation</h1>
                 <table class=" table w-full ">
-                    <!-- head -->
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th>Area</th>
-                            <th>Convert</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+                    <tbody id="table-container">
+                       
 
 
+                       
                     </tbody>
                 </table>
 
             </div>
         </section>
     </main>
+
+    <script src="/js/calculation.js"></script>
+    
 </body>
 
 </html>
