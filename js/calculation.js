@@ -12,14 +12,21 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
 
    //    calculation
    const triangleArea = 0.5 * parseFloat(triangleInputFieldB) * parseFloat(triangleInputFieldH);
+   
 
    // common string
    const length = triangleArea + 'cm' + stringSup.innerHTML;
 
-
+   
    displayData(serial, triangleTitle, length)
 
    serial += 1;
+
+   if (isNaN(triangleInputFieldB)) {
+      alert('Please provide a number')
+      return;
+  }
+ 
 
 })
 
@@ -184,6 +191,9 @@ btn.id = "btnId"
 btn.className = "btnClass"
 btn.type = "submit";
 btn.name = "convert";
+btn.style.backgroundColor="red";
+
+
 
 // superscript -Area
 let stringSup = document.createElement("sup");
